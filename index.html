@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowToSPA</title>
+
+    <link href='style.css' rel='stylesheet' />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-route.min.js"></script>
+</head>
+<body ng-app='myApp'>
+
+    <div class='body-cont'>
+        <div class='page-bar'></div>
+
+        <div ng-controller='mainController'>
+            <div class='navMenu' id='myNav'>
+                <div class='v-menu-cont'>
+                    <div class='navItem' id='prev'>&lt;</div>
+    
+                    <div ng-repeat='navitem in menuCont' class='navItem'>
+                        <a href='#{{ navitem.link }}'>{{ navitem.step }}</a>
+                    </div>
+    
+                    <div class='navItem' id='next'>&gt;</div>
+                </div>
+            </div>
+            
+            <div class='anim' id='appCont' ng-view>
+    
+            </div>
+    
+        </div>
+        
+        <div class='page-bar'></div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>

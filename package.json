@@ -1,0 +1,15 @@
+{
+  "name": "howtospa2",
+  "version": "1.0.0",
+  "description": "How to get started in Rust",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Mercer",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.9",
+    "http-server": "^0.9.0"
+  }
+}
